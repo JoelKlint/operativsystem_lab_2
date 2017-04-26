@@ -2,7 +2,7 @@
 #include <signal.h>
 #include <unistd.h>
 
-int proceed = 1;
+volatile int proceed = 1;
 
 
 void firstHandler(int sig)
